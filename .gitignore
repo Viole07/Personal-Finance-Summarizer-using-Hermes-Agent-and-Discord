@@ -1,0 +1,27 @@
+# Environment & Secrets
+.env
+*.env
+.env.*
+
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# Database & Generated Reports
+data/finance.db
+data/reports/*.png
+data/statements/*.pdf
+data/statements/*.csv
+
+# Allow a sample statement file if you want others to test it
+!data/statements/sample*.csv
+
+# IDE & OS Noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

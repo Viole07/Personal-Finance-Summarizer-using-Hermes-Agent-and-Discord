@@ -1,0 +1,31 @@
+[project]
+name = "hermes-finance-summarizer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Amaan Sayyed", email = "amaanafsarsayyed@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "discord-py>=2.7.1",
+    "matplotlib>=3.11.1",
+    "openai>=2.51.0",
+    "pandas>=3.0.5",
+    "pdfplumber>=0.11.10",
+    "pytesseract>=0.3.13",
+    "python-dotenv>=1.2.2",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+hermes-finance-summarizer = "hermes_finance_summarizer:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
