@@ -83,14 +83,13 @@ hermes-finance-summarizer/
 │       ├── discord_agent.py     # Discord bot daemon & OpenRouter tool-calling agent
 │       ├── parser.py            # PDF and CSV bank statement parsing engine
 │       ├── normalizer.py        # Local PII masking firewall & merchant cleanup
+│       ├── test_normalizer.py      # Automated pytest suite for PII firewall
 │       ├── categorizer.py       # Priority rules and local SQLite cache manager
 │       ├── llm_fallback.py      # Scrubbed batch LLM categorization via OpenRouter
 │       ├── analyzer.py          # Duplicate, spike, and subscription hike detectors
 │       ├── reporter.py          # Matplotlib chart generator & Markdown renderer
 │       ├── db.py                # SQLite schema init, baseline seeding, and DB resets
 │       └── tools.py             # Agent function implementations for Discord Q&A
-├── tests/
-│   └── test_normalizer.py      # Automated pytest suite for PII firewall
 ├── data/                        # Local database, report PNGs, & statement storage (Gitignored)
 ├── pyproject.toml               # Dependency specification & build configuration
 ├── uv.lock                      # Deterministic dependency lockfile
