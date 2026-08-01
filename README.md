@@ -74,6 +74,7 @@ Powered by a **two-stage local/cloud categorization pipeline**, a **local PII pr
 
 ## 📁 Project Structure
 
+```text
 hermes-finance-summarizer/
 ├── src/
 │   └── hermes_finance_summarizer/
@@ -95,7 +96,7 @@ hermes-finance-summarizer/
 ├── uv.lock                      # Deterministic dependency lockfile
 ├── .gitignore                   # Ignore rules for secrets, DBs, & virtualenvs
 └── README.md
-
+```
 
 ---
 
